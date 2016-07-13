@@ -11,7 +11,7 @@ module.exports = function(app) {
     ? address = details.address : undefined);
   }
 
-  var server = app.listen(3000, address);
+  var server = app.listen(3000, 'localhost');
 
   server.on('listening', function() {
     var port = server.address().port;
